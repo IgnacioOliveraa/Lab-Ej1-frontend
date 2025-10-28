@@ -1,22 +1,57 @@
-# Frontend - Lab Ejercicio 1
+# 🌐 Frontend — Laboratorio Ejercicio 1
 
-Este proyecto contiene el **frontend** de la aplicación de registro de usuarios, desarrollado en **HTML, CSS y JS**.
+Este proyecto implementa el **frontend** de la aplicación CRUD de usuarios, utilizando **HTML, CSS y JavaScript puro**.  
+Se conecta al backend de Django a través de la API REST (`http://127.0.0.1:8000/api/users/`).
 
-## Descripción
-- Formulario para **crear usuarios**.
-- Lista de usuarios consultando la API del backend.
-- Se conecta con el backend corriendo en `http://127.0.0.1:8000`.
+---
 
-## Estructura del proyecto
+## ⚙️ Tecnologías utilizadas
+
+- HTML5  
+- CSS3  
+- JavaScript (Fetch API)
+
+---
+
+## 🚀 Instrucciones para ejecutar
+
+1. Clonar el repositorio:
+
+   ```bash
+   git clone https://github.com/IgnacioOliveraa/Lab-Ej1-frontend.git
+   cd Lab-Ej1-frontend
+
+
+Abrir el archivo en el navegador.index.html
+Completar el formulario y probar el envío.
+Se deberían mostrar los usuarios listados desde el backend.
+
+Estructura del proyecto:
 
 frontend/
-├── index.html → formulario y lista de usuarios
-├── style.css → estilos
-├── script.js → lógica JS y fetch a backend
-└── evidencias/ → capturas del funcionamiento
+├── index.html
+├── style.css
+├── script.js
+└── evidencias/
+    ├── frontend_after_create.png
+    ├── frontend_after__create.png
+    ├── frontend_form.png
+    └── frontend_mail_console.png
 
-## Cómo usar
-1. Abrir `index.html` en el navegador.
-2. Backend debe estar corriendo (`http://127.0.0.1:8000`).
-3. Completar el formulario y enviar para crear un usuario.
-4. La lista se actualiza automáticamente.
+
+Evidencias
+Evidencia	Descripción
+
+	Formulario inicial del frontend
+
+	Vista después de crear un nuevo usuario
+
+	Segunda captura posterior a la creación
+
+	Consola mostrando confirmación del envío
+
+Comunicación con el backend
+
+El frontend utiliza la siguiente API para interactuar con el backend:
+
+fetch("http://127.0.0.1:8000/api/users/")
